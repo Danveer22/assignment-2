@@ -120,7 +120,7 @@ body {
   font-weight: inherit;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 325px) {
   .product-card {
     flex-direction: column;
   }
