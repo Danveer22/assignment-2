@@ -81,6 +81,7 @@ body {
   font-weight: 700;
   font-family: var(--font-helper);
   color: var(--primary-color);
+  margin-bottom: 2rem;
 }
 .product-price span {
   font-size: 1.2rem;
@@ -132,27 +133,31 @@ body {
 
   .product-details {
     width: 100%;
-    padding: 20px;
+    padding: 2rem;
   }
 
-  h1 {
-    font-size: 2rem;
+  .category {
+    font-size: 1.8rem;
+  }
+
+  .product-details h1 {
+    font-size: 4.6rem;
   }
 
   .product-description {
-    font-size: 0.9rem;
-  }
-
-  .product-price {
     font-size: 2rem;
   }
 
-  .product-price span {
-    font-size: 1rem;
+  .product-price {
+    font-size: 4rem;
   }
 
-  button {
-    font-size: 1rem;
+  .product-price span {
+    font-size: 1.8rem;
+  }
+
+  .product-card button {
+    font-size: 2rem;
     padding: 15px;
   }
 }
