@@ -90,7 +90,7 @@ body {
   margin-bottom: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .product-price span {
@@ -129,27 +129,27 @@ body {
 @media (max-width: 768px) {
   .product-card {
     flex-direction: column;
-    max-width: 75%;
+    max-width: 70%;
   }
   .category {
-    font-size: 1.6rem;
-    letter-spacing: 1rem;
+    font-size: 1.4rem;
+    letter-spacing: 6px;
   }
   .product-details h1 {
-    font-size: 5rem;
+    font-size: 4.4rem;
   }
   .product-description {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   .product-price {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .product-price span {
     font-size: 1.8rem;
   }
   .product-details button {
-    font-size: 2rem;
-    padding: 2rem 0;
+    font-size: 1.8rem;
+    padding: 1.4rem 0;
   }
 }
 
