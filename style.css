@@ -23,6 +23,7 @@ body {
   background-color: var(--bg-color);
   height: 100vh;
   display: flex;
+
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -128,10 +129,13 @@ body {
 @media (max-width: 575px) {
   .product-card {
     flex-direction: column;
-    max-width: 90%;
+    max-width: 60%;
+  }
+  .category {
+    margin-bottom: 0.8rem;
   }
   .product-details h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   .product-description {
     font-size: 1.2rem;
