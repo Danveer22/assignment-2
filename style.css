@@ -15,8 +15,8 @@ html {
   --bg-color: hsl(30, 38%, 92%);
   --color-white: hsl(0, 0%, 100%);
   --header-text-color: hsl(212, 21%, 14%);
-  --font-main: "Montserrat";
-  --font-helper: "Fraunces";
+  --font-main: "Montserrat", sans-serif;
+  --font-helper: "Fraunces", serif;
 }
 
 body {
@@ -24,27 +24,31 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  gap: 2rem;
   color: var(--text-color);
-  font-family: var(--font-main), sans-serif;
-  font-size: 1.1rem;
+  font-family: var(--font-main);
+  font-size: 1.6rem;
   line-height: 1.6;
-  font-weight: 500;
 }
 
 .product-card {
-  max-width: 50rem;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-direction: row;
+  max-width: 60rem;
   background-color: var(--color-white);
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 4rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.product-card picture,
-.product-card img {
+.product-image,
+.product-details {
+  flex: 1;
+}
+
+.product-image picture,
+.product-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -55,6 +59,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.category {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
 .product-details h1 {
   color: var(--header-text-color);
   line-height: 1.05;
@@ -68,28 +81,21 @@ body {
   margin-bottom: 1.6rem;
 }
 
-.category {
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-
 .product-price {
   font-size: 2.6rem;
   font-weight: 700;
   font-family: var(--font-helper);
   color: var(--primary-color);
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
+
 .product-price span {
   font-size: 1.2rem;
-  margin-left: 1rem;
   color: var(--text-color);
-
   text-decoration: line-through;
-  font-weight: 500;
 }
 
 .product-details button {
@@ -117,84 +123,17 @@ body {
 
 .product-details button ion-icon {
   font-size: 2rem;
-  font-weight: inherit;
 }
 
-/* Responsive styles */
 @media (max-width: 575px) {
   .product-card {
     flex-direction: column;
+    max-width: 90%;
   }
-
-  .product-card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .product-details {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .category {
-    font-size: 1.8rem;
-  }
-
   .product-details h1 {
-    font-size: 4.6rem;
+    font-size: 2.8rem;
   }
-
   .product-description {
-    font-size: 2rem;
-  }
-
-  .product-price {
-    font-size: 4rem;
-  }
-
-  .product-price span {
-    font-size: 1.8rem;
-  }
-
-  .product-card button {
-    font-size: 2rem;
-    padding: 15px;
+    font-size: 1.2rem;
   }
 }
-
-/* @media (max-width: 1080px) {
-  .product-card {
-    flex-direction: column;
-  }
-  .product-card img {
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
-  }
-  .product-details {
-    padding: 2.5rem;
-  }
-
-  .product-details h1 {
-    font-size: 3.4rem;
-  }
-
-  .product-price {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  .category {
-    font-size: 1.4rem;
-  }
-
-  .product-price span {
-    font-size: 1.6rem;
-  }
-  .product-description {
-    font-size: 1.6rem;
-  }
-  .product-details button {
-    padding: 2rem 0;
-    font-size: 1.8rem;
-  }
-} */
